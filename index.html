@@ -48,6 +48,7 @@ iframe {
     padding: 0px;
     height: 100%;
     border: none;
+    background: url(./image/youtube_logo.png) no-repeat center center;
 }
 iframe {
     display: block;
@@ -102,7 +103,7 @@ iframe {
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
       videoId: vid,
-    //   videoId: 'GoXPbGQl-uQ',
+    //   videoId: 'hj83cwfOF3Y',
       playerVars: { 'autoplay': 1, 'playsinline': 1 },
       events: {
         'onReady': onPlayerReady
