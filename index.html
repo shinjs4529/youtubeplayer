@@ -60,8 +60,8 @@ iframe {
 
 <script>
     window.addEventListener('load', function (){
-        document.getElementById('check').contentWindow.location='https://www.youtube.com/embed/'+location.toString().split('?')[1]+'?autoplay=1'
-        // document.getElementById('check').contentWindow.location='https://www.youtube.com/embed/kUJv343NHsU'
+        document.getElementById('check').contentWindow.location='https://www.youtube.com/embed/'+location.toString().split('?')[1]+'?autoplay=1&;enablejsapi=1'
+        // document.getElementById('check').contentWindow.location='https://www.youtube.com/embed/kUJv343NHsU'+'?autoplay=1&;enablejsapi=1'
     }, false); 
 </script> 
 
@@ -96,7 +96,8 @@ marginwidth="0"
 width="100%" 
 height="100%" 
 scrolling="auto"
-allow="autoplay"></iframe>
+allow="autoplay"
+autoplay></iframe>
 </div>
 
 <!-- <div id="player"></div>
