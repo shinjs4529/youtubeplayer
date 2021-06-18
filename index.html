@@ -49,7 +49,6 @@ iframe {
     height: 100%;
     border: none;
 }
-    
 iframe {
     display: block;
     width: 100%;
@@ -59,12 +58,12 @@ iframe {
 }
 </style>
 
-<!-- <script>
+<script>
     window.addEventListener('load', function (){
-        document.getElementById('check').contentWindow.location='https://www.youtube.com/embed/'+location.toString().split('?')[1]
+        document.getElementById('check').contentWindow.location='https://www.youtube.com/embed/'+location.toString().split('?')[1]+'?autoplay=1'
         // document.getElementById('check').contentWindow.location='https://www.youtube.com/embed/kUJv343NHsU'
     }, false); 
-</script>  -->
+</script> 
 
 <!-- <script>
 // function height_iframe()
@@ -89,17 +88,18 @@ iframe {
 
 <body >
     
-<!-- <div>
+<div>
 <iframe id="check" src="about:blank"
 frameborder="0" 
 marginheight="0" 
 marginwidth="0" 
 width="100%" 
 height="100%" 
-scrolling="auto" ></iframe>
-</div> -->
+scrolling="auto"
+allow="autoplay"></iframe>
+</div>
 
-<div id="player"></div>
+<!-- <div id="player"></div>
 
 <script>
   // 2. This code loads the IFrame Player API code asynchronously.
@@ -115,8 +115,8 @@ scrolling="auto" ></iframe>
   var vid = location.toString().split('?')[1];
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      height: '390',
-      width: '640',
+    //   height: '390',
+    //   width: '640',
       videoId: vid,
       playerVars: { 'autoplay': 1, 'playsinline': 1 },
       events: {
@@ -145,6 +145,6 @@ scrolling="auto" ></iframe>
 //   function stopVideo() {
 //     player.stopVideo();
 //   }
-</script>
+</script> -->
 </body>
 </html>
