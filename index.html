@@ -64,23 +64,18 @@ iframe {
 }
 </style>
 
-<!-- <script>
+<script>
     window.addEventListener('load', function (){
         document.getElementById('check').contentWindow.location='https://www.youtube.com/embed/'+location.toString().split('?')[1].replace('&','?')
         // document.getElementById('check').contentWindow.location='https://www.youtube.com/embed/'+location.toString().split('?')[1]+'?autoplay=1&mute=1'
         // document.getElementById('check').contentWindow.location='https://www.youtube.com/watch?v=kUJv343NHsU'
     }, false); 
-</script> -->
-    <script type="text/javascript">
-            $(document).ready(function(){
-                $('#content').load("https://www.youtube.com/watch?v="+location.toString().split('?')[1]);
-            })
-        </script>
+</script>
 
 </head>
 <body >
     
-<!--     
+    
 <div>
     <iframe id="check" src="about:blank"
         frameborder="0" 
@@ -91,11 +86,7 @@ iframe {
         scrolling="auto"
         allow="autoplay">
     </iframe>
-</div> -->
-    <div> 
-        <object type="text/html" data="https://www.youtube.com/watch?v="+location.toString().split('?')[1] width="800px" height="600px" style="overflow:auto;border:5px ridge blue">
-        </object>
-    </div>
+</div>
     
 <!-- <div id="player"></div> -->
 
